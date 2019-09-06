@@ -1,0 +1,322 @@
+make,model,production_year,body_style,num_of_doors,steering_wheel_side,gearbox,fuel_type,engine_power,engine_capacity,mileage,color,price
+Lexus,RX,2008,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,212762,White,11000
+Toyota,RAV4,2015,SUV,5,Lefthanded,Automatic,Diesel,149,2.2,47991,Silver,17000
+Toyota,Land Cruiser,2012,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,309,4.6,145045,Dark Gray,35000
+Lexus,GS,2011,Sedan,5,Lefthanded,Automatic,Gasoline,300,3.5,292463,White,8000
+Subaru,Forester,2018,SUV,5,Lefthanded,Automatic,Gasoline,148,2.0,5322,White,25000
+Mazda,6,2012,Wagon,5,Lefthanded,Automatic,Gasoline,162,2.0,22840,Graphite,8100
+Subaru,Forester,2016,SUV,5,Lefthanded,Automatic,Gasoline,253,2.0,8250,Silver,18000
+Mazda,CX-5,2012,SUV,5,Lefthanded,Automatic,Gasoline,186,2.5,219586,White,11300
+Subaru,WRX,2014,Sedan,5,Lefthanded,Manual,Gasoline,152,2.0,151363,Blue,17000
+Mazda,6,2015,Sedan,5,Lefthanded,Manual,Diesel,173,2.2,294310,Black,11500
+Nissan,Leaf,2014,Hatchback,5,Lefthanded,Automatic,Electric,30,0.0,273119,Blue,9999
+Lexus,RX,2011,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,180845,Black,16342
+Toyota,Avensis,2015,Wagon,5,Lefthanded,Manual,Diesel,174,2.2,63308,Brown,11900
+Lexus,GS,2015,Sedan,5,Lefthanded,Automatic,Hybrid,343,3.5,197755,Red,20000
+Lexus,GS,2016,Sedan,5,Lefthanded,Automatic,Hybrid,181,2.5,77102,Black,40000
+Lexus,LX,2013,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,383,5.7,150089,Green,110000
+Nissan,X-Trail,2016,SUV,5,Lefthanded,Automatic,Gasoline,177,2.0,133197,White,18200
+Subaru,Legacy,2013,Sedan,5,Lefthanded,Automatic,Diesel,150,2.0,188029,Gold,8500
+Lexus,LX,2011,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,271,4.7,69285,Red,42000
+Subaru,Impreza,2015,Sedan,5,Lefthanded,Automatic,Gasoline,115,1.6,142681,Black,8200
+Mazda,3,2010,Sedan,5,Lefthanded,Manual,Gasoline,150,2.0,146964,White,4000
+Honda,HR-V,2015,SUV,5,Lefthanded,Manual,Diesel,120,1.6,19249,Blue,17800
+Toyota,Camry,2015,Sedan,5,Lefthanded,Automatic,Hybrid,156,2.4,208936,Black,12000
+Toyota,Avensis,2017,Wagon,5,Lefthanded,Automatic,Diesel,148,2.2,55411,White,15000
+Subaru,Impreza,2018,Sedan,5,Lefthanded,Manual,Gasoline,115,1.6,54978,Black,21000
+Mazda,6,2018,Wagon,5,Lefthanded,Automatic,Diesel,173,2.2,322866,White,29000
+Mazda,CX-5,2016,SUV,5,Lefthanded,Automatic,Diesel,173,2.2,334079,Silver,15200
+Lexus,RX,2013,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,98929,Dark Gray,28128
+Nissan,Leaf,2010,Hatchback,5,Lefthanded,Automatic,Electric,30,0.0,35051,Black,6000
+Lexus,GS,2016,Sedan,5,Lefthanded,Automatic,Hybrid,343,3.5,66117,White,50000
+Subaru,BRZ,2015,Coupe,2,Lefthanded,Automatic,Gasoline,203,2.0,187670,Red,13000
+Mazda,6,2018,Sedan,5,Lefthanded,Automatic,Gasoline,162,2.0,36030,Light Gray,28000
+Mazda,CX-5,2018,SUV,5,Lefthanded,Automatic,Diesel,173,2.2,35236,Red,29200
+Nissan,X-Trail,2014,SUV,5,Lefthanded,Manual,Gasoline,177,2.0,157846,White,13000
+Nissan,Leaf,2011,Hatchback,5,Lefthanded,Automatic,Electric,24,0.0,240944,Red,5999
+Mazda,3,2018,Hatchback,5,Lefthanded,Manual,Gasoline,163,2.0,251617,Black,14000
+Honda,HR-V,2018,SUV,5,Lefthanded,Manual,Diesel,140,2.2,97210,White,20000
+Subaru,Legacy,2009,Wagon,5,Lefthanded,Manual,Diesel,150,2.0,131941,White,4700
+Subaru,Legacy,2013,Sedan,5,Lefthanded,Automatic,Gasoline,265,2.5,230240,Light Gray,6000
+Subaru,Legacy,2011,Wagon,5,Lefthanded,Automatic,Gasoline,256,3.6,132635,Black,11000
+Toyota,Land Cruiser,2013,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,309,4.6,168821,Black,60000
+Toyota,GT86,2017,Coupe,2,Lefthanded,Automatic,Gasoline,203,2.0,48290,Red,16000
+Toyota,Camry,2013,Sedan,5,Lefthanded,Automatic,Hybrid,156,2.4,154568,Blue,7000
+Subaru,WRX STI,2013,Sedan,5,Lefthanded,Automatic,Gasoline,328,2.0,157896,Blue,25700
+Lexus,LX,2014,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,313,4.6,283986,Gold,76000
+Honda,Accord,2011,Wagon,5,Lefthanded,Manual,Diesel,150,2.2,236566,Silver,6700
+Toyota,GT86,2018,Coupe,2,Lefthanded,Automatic,Gasoline,203,2.0,309696,Raven,19000
+Lexus,GS,2015,Sedan,5,Lefthanded,Automatic,Gasoline,306,3.5,127166,Light Gray,28000
+Subaru,Legacy,2014,Wagon,5,Lefthanded,Automatic,Diesel,150,2.0,302888,Black,10000
+Mazda,CX-5,2016,SUV,5,Lefthanded,Manual,Diesel,173,2.2,169230,White,12000
+Subaru,Legacy,2012,Wagon,5,Lefthanded,Manual,Diesel,150,2.0,364298,Black,8650
+Mazda,3,2009,Sedan,5,Lefthanded,Automatic,Diesel,182,2.2,341303,Black,5100
+Honda,Accord,2010,Sedan,5,Lefthanded,Manual,Gasoline,200,2.4,257642,Dark Blue,7600
+Lexus,GS,2012,Sedan,5,Lefthanded,Automatic,Gasoline,317,3.5,202316,Black,18000
+Lexus,RX,2010,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,176813,Dark Gray,19100
+Mazda,CX-5,2018,SUV,5,Lefthanded,Automatic,Gasoline,186,2.5,4689,Silver,31000
+Subaru,Legacy,2018,Sedan,5,Lefthanded,Automatic,Diesel,150,2.0,9656,Red,20000
+Lexus,GS,2013,Sedan,5,Lefthanded,Automatic,Gasoline,306,3.5,332223,White,18000
+Honda,Civic,2013,Hatchback35,3,Lefthanded,Manual,Hybrid,110,1.5,218797,Red,8000
+Honda,HR-V,2015,SUV,5,Lefthanded,Manual,Gasoline,145,1.8,394643,White,17000
+Lexus,LX,2016,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,367,5.7,378965,Black,70000
+Lexus,IS,2018,Sedan,5,Lefthanded,Automatic,Gasoline,306,3.5,62878,Graphite,38000
+Nissan,Qashqai,2015,SUV,5,Lefthanded,Automatic,Diesel,130,1.6,204148,White,13000
+Toyota,Prius,2013,Liftback,5,Lefthanded,Automatic,Hybrid,76,1.5,111702,Black,8000
+Lexus,GS,2013,Sedan,5,Lefthanded,Automatic,Gasoline,209,2.5,394104,Graphite,23000
+Toyota,Land Cruiser,2011,Full-Size SUV,5,Lefthanded,Automatic,Diesel,235,4.5,33127,Gold,40000
+Toyota,Avensis,2012,Sedan,5,Lefthanded,Automatic,Gasoline,145,1.8,26163,Dark Blue,8000
+Mazda,CX-5,2014,SUV,5,Lefthanded,Automatic,Gasoline,162,2.0,94331,Graphite,10000
+Subaru,Legacy,2017,Wagon,5,Lefthanded,Automatic,Gasoline,172,2.5,56327,White,16900
+Lexus,RX,2013,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,49183,Black,28103
+Subaru,WRX,2015,Sedan,5,Lefthanded,Automatic,Gasoline,300,2.0,84486,Red,18000
+Lexus,GS,2015,Sedan,5,Lefthanded,Automatic,Hybrid,181,2.5,322427,White,27000
+Nissan,Leaf,2010,Hatchback,5,Lefthanded,Automatic,Electric,24,0.0,189662,Black,6200
+Mazda,3,2018,Hatchback,5,Lefthanded,Manual,Diesel,150,2.2,348737,Dark Blue,13900
+Subaru,Legacy,2009,Wagon,5,Lefthanded,Automatic,Gasoline,167,2.5,311722,Black,4700
+Mazda,CX-5,2014,SUV,5,Lefthanded,Automatic,Gasoline,162,2.0,329975,White,9900
+Mazda,3,2010,Sedan,5,Lefthanded,Manual,Gasoline,260,2.2,134062,Dark Blue,5000
+Subaru,Legacy,2016,Sedan,5,Lefthanded,Manual,Gasoline,173,2.5,4833,Blue,12000
+Mazda,6,2016,Sedan,5,Lefthanded,Manual,Gasoline,186,2.5,344007,Red,10000
+Toyota,RAV4,2017,SUV,5,Lefthanded,Automatic,Hybrid,200,2.5,56962,Black,20200
+Subaru,Legacy,2009,Wagon,5,Lefthanded,Manual,Diesel,150,2.0,237648,Black,4300
+Lexus,LX,2016,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,367,5.7,224865,Light Gray,77000
+Subaru,WRX,2012,Sedan,5,Lefthanded,Automatic,Gasoline,268,2.0,255413,White,12000
+Honda,HR-V,2017,SUV,5,Lefthanded,Automatic,Gasoline,130,1.5,108976,Red,22000
+Subaru,WRX STI,2014,Sedan,5,Lefthanded,Automatic,Gasoline,328,2.0,261704,Black,26000
+Subaru,Forester,2017,SUV,5,Lefthanded,Manual,Diesel,147,2.0,158086,Black,17000
+Subaru,BRZ,2016,Coupe,2,Lefthanded,Automatic,Gasoline,203,2.0,19043,Blue,13900
+Lexus,LX,2014,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,313,4.6,4415,White,59000
+Nissan,X-Trail,2015,SUV,5,Lefthanded,Automatic,Gasoline,145,2.0,217629,Blue,13200
+Mazda,6,2014,Sedan,5,Lefthanded,Manual,Gasoline,162,2.0,365487,Light Gray,9800
+Lexus,GS,2013,Sedan,5,Lefthanded,Automatic,Hybrid,343,3.5,269843,White,20000
+Nissan,Leaf,2012,Hatchback,5,Lefthanded,Automatic,Electric,24,0.0,250322,Black,8200
+Toyota,Land Cruiser,2011,Full-Size SUV,5,Lefthanded,Manual,Diesel,286,4.5,347795,White,35000
+Nissan,X-Trail,2018,SUV,5,Lefthanded,Automatic,Gasoline,130,1.6,111008,White,23000
+Subaru,Legacy,2017,Wagon,5,Lefthanded,Manual,Gasoline,265,2.5,188416,Silver,12000
+Subaru,Legacy,2016,Sedan,5,Lefthanded,Automatic,Gasoline,172,2.5,355697,Black,9999
+Mazda,CX-5,2017,SUV,5,Lefthanded,Manual,Diesel,173,2.2,99297,White,19999
+Lexus,RX,2008,SUV,5,Lefthanded,Automatic,Hybrid,211,3.3,288958,Gold,9500
+Lexus,RX,2009,SUV,5,Lefthanded,Automatic,Gasoline,276,3.5,31449,Black,17000
+Lexus,RX,2012,SUV,5,Lefthanded,Automatic,Gasoline,276,3.5,111356,Silver,19000
+Mazda,6,2012,Sedan,5,Lefthanded,Automatic,Diesel,173,2.2,259487,White,8000
+Mazda,CX-5,2014,SUV,5,Lefthanded,Manual,Gasoline,162,2.0,79543,White,10000
+Honda,Accord,2009,Sedan,5,Lefthanded,Manual,Gasoline,177,2.4,156955,Black,5200
+Nissan,GT-R,2008,Coupe,2,Lefthanded,Automatic,Gasoline,600,3.8,125446,Dark Gray,36000
+Honda,HR-V,2017,SUV,5,Lefthanded,Automatic,Gasoline,140,1.6,101238,White,20000
+Honda,Civic,2017,Hatchback35,5,Lefthanded,Manual,Gasoline,205,1.5,68386,White,15000
+Honda,Accord,2008,Wagon,5,Lefthanded,Automatic,Diesel,150,2.2,251766,Black,4900
+Mazda,CX-5,2012,SUV,5,Lefthanded,Manual,Gasoline,162,2.0,273179,Red,8000
+Nissan,GT-R,2009,Coupe,2,Lefthanded,Automatic,Gasoline,550,3.8,147222,Black,38000
+Mazda,CX-5,2012,SUV,5,Lefthanded,Automatic,Gasoline,162,2.0,49297,Black,9000
+Mazda,3,2011,Hatchback,5,Lefthanded,Manual,Diesel,114,1.6,261051,Black,4670
+Mazda,CX-5,2014,SUV,5,Lefthanded,Manual,Gasoline,186,2.5,194578,White,11110
+Mazda,3,2012,Hatchback,5,Lefthanded,Manual,Diesel,114,1.6,336186,Dark Blue,5600
+Honda,Civic,2017,Hatchback35,3,Lefthanded,Automatic,Gasoline,205,1.5,254568,Green,15000
+Nissan,Qashqai,2017,SUV,5,Lefthanded,Automatic,Diesel,130,1.6,133981,White,16000
+Nissan,Leaf,2018,Hatchback,5,Lefthanded,Automatic,Electric,30,0.0,31349,White,33200
+Subaru,Forester,2015,SUV,5,Lefthanded,Automatic,Gasoline,253,2.0,247881,Red,13900
+Lexus,GS,2016,Sedan,5,Lefthanded,Automatic,Hybrid,181,2.5,81280,Black,36000
+Mazda,6,2017,Wagon,5,Lefthanded,Automatic,Gasoline,162,2.0,145008,Gray,19000
+Honda,HR-V,2018,SUV,5,Lefthanded,Automatic,Gasoline,145,1.8,99336,Silver,24000
+Honda,Civic,2016,Hatchback35,5,Lefthanded,Manual,Gasoline,306,2.0,154908,Red,12800
+Lexus,LX,2016,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,313,4.6,335795,White,80000
+Subaru,Forester,2013,SUV,5,Lefthanded,Automatic,Diesel,147,2.0,21314,Blue,10200
+Lexus,RX,2014,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,173332,Light Gray,24000
+Nissan,Qashqai,2014,SUV,5,Lefthanded,Automatic,Gasoline,115,1.2,174933,Black,9200
+Subaru,Impreza,2015,Hatchback,5,Lefthanded,Automatic,Gasoline,115,1.6,120552,Black,9560
+Honda,Jazz,2017,Hatchback,5,Lefthanded,Manual,Hybrid,110,1.5,220091,Red,15000
+Subaru,BRZ,2013,Coupe,2,Lefthanded,Automatic,Gasoline,203,2.0,16750,Black,15000
+Lexus,LX,2014,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,271,4.7,244264,White,52000
+Lexus,RX,2013,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,245119,White,23002
+Toyota,Avensis,2012,Sedan,5,Lefthanded,Automatic,Gasoline,145,1.8,125739,Medium Silver,8700
+Lexus,RX,2011,SUV,5,Lefthanded,Automatic,Gasoline,277,3.5,234028,Red,21000
+Toyota,RAV4,2016,SUV,5,Lefthanded,Automatic,Gasoline,179,2.5,184717,Dark Blue,15600
+Nissan,Juke,2017,SUV,5,Lefthanded,Manual,Diesel,110,1.5,133071,Red,10900
+Nissan,GT-R,2014,Coupe,2,Lefthanded,Automatic,Gasoline,530,3.8,8511,Red,67000
+Mazda,6,2015,Sedan,5,Lefthanded,Automatic,Diesel,173,2.2,24370,Dark Blue,12000
+Toyota,Avensis,2017,Wagon,5,Lefthanded,Manual,Diesel,141,2.0,274841,White,16000
+Mazda,3,2012,Hatchback,5,Lefthanded,Automatic,Gasoline,150,2.0,209690,Light Gray,5900
+Honda,Accord,2008,Sedan,5,Lefthanded,Automatic,Diesel,150,2.2,394293,White,4500
+Toyota,Prius,2009,Liftback,5,Lefthanded,Automatic,Hybrid,76,1.5,36037,Black,5000
+Nissan,GT-R,2009,Coupe,2,Lefthanded,Automatic,Gasoline,530,3.8,328497,White,40000
+Lexus,LX,2014,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,271,4.7,214297,Red,53000
+Nissan,Qashqai,2018,SUV,5,Lefthanded,Manual,Diesel,130,1.6,32962,White,19000
+Lexus,IS,2015,Sedan,5,Lefthanded,Automatic,Gasoline,215,2.5,241612,White,17000
+Nissan,Leaf,2012,Hatchback,5,Lefthanded,Automatic,Electric,30,0.0,195035,Dark Gray,9888
+Nissan,Qashqai,2018,SUV,5,Lefthanded,Manual,Gasoline,115,1.2,328522,Black,19000
+Subaru,Impreza,2014,Hatchback,5,Lefthanded,Automatic,Gasoline,152,2.0,52737,Gold,8400
+Nissan,X-Trail,2014,SUV,5,Lefthanded,Manual,Gasoline,145,2.0,232007,Black,13100
+Mazda,3,2015,Hatchback,5,Lefthanded,Automatic,Diesel,150,2.2,90861,Graphite,9000
+Honda,Accord,2011,Sedan,5,Lefthanded,Automatic,Diesel,150,2.2,277024,Silver,6200
+Lexus,RX,2010,SUV,5,Lefthanded,Automatic,Gasoline,210,3.3,286357,Dark Gray,10900
+Nissan,Qashqai,2018,SUV,5,Lefthanded,Automatic,Diesel,130,1.6,23100,Black,22000
+Subaru,Forester,2018,SUV,5,Lefthanded,Manual,Diesel,147,2.0,182478,Blue,23300
+Mazda,3,2011,Hatchback,5,Lefthanded,Automatic,Diesel,114,1.6,221292,Silver,4999
+Subaru,BRZ,2015,Coupe,2,Lefthanded,Manual,Gasoline,203,2.0,81679,Black,14500
+Lexus,GS,2016,Sedan,5,Lefthanded,Automatic,Hybrid,343,3.5,153279,Black,39000
+Mazda,3,2014,Sedan,5,Lefthanded,Automatic,Diesel,150,2.2,101533,Black,10000
+Subaru,Legacy,2014,Wagon,5,Lefthanded,Manual,Diesel,150,2.0,24671,Dark Gray,9900
+Lexus,IS,2013,Sedan,5,Lefthanded,Manual,Gasoline,306,3.5,37233,White,17000
+Honda,Civic,2016,Hatchback35,5,Lefthanded,Manual,Gasoline,306,2.0,218488,Gold,12000
+Toyota,Corolla,2018,Sedan,5,Lefthanded,Manual,Gasoline,132,1.8,193839,White,15000
+Lexus,IS,2014,Sedan,5,Lefthanded,Manual,Hybrid,220,2.5,206830,White,16500
+Toyota,GT86,2018,Coupe,2,Lefthanded,Manual,Gasoline,203,2.0,112049,Red,19000
+Lexus,GS,2018,Sedan,5,Lefthanded,Automatic,Gasoline,245,2.0,299523,Red,30000
+Mazda,6,2016,Sedan,5,Lefthanded,Automatic,Gasoline,162,2.0,207305,White,9500
+Nissan,GT-R,2013,Coupe,2,Lefthanded,Automatic,Gasoline,570,3.8,196692,Black,80200
+Subaru,Forester,2018,SUV,5,Lefthanded,Manual,Diesel,147,2.0,176801,White,20100
+Lexus,RX,2009,SUV,5,Lefthanded,Automatic,Gasoline,276,3.5,222112,White,14000
+Nissan,Juke,2015,SUV,5,Lefthanded,Manual,Diesel,110,1.5,126506,Red,9900
+Honda,Civic,2017,Hatchback35,3,Lefthanded,Automatic,Gasoline,306,2.0,42813,Blue,15600
+Nissan,GT-R,2007,Coupe,2,Lefthanded,Automatic,Gasoline,485,3.8,144648,Light Gray,32700
+Nissan,Leaf,2017,Hatchback,5,Lefthanded,Automatic,Electric,24,0.0,97536,Dark Gray,19000
+Nissan,Leaf,2012,Hatchback,5,Lefthanded,Automatic,Electric,30,0.0,227371,Gold,8900
+Subaru,Legacy,2015,Wagon,5,Lefthanded,Manual,Gasoline,265,2.5,326929,Dark Blue,11000
+Honda,Jazz,2013,Hatchback,5,Lefthanded,Manual,Gasoline,132,1.5,183492,Red,6700
+Mazda,CX-5,2013,SUV,5,Lefthanded,Manual,Diesel,173,2.2,273239,White,11000
+Mazda,6,2017,Wagon,5,Lefthanded,Manual,Diesel,173,2.2,13808,Graphite,15000
+Subaru,WRX STI,2011,Sedan,5,Lefthanded,Automatic,Gasoline,328,2.0,26104,Blue,17000
+Nissan,GT-R,2016,Coupe,2,Lefthanded,Automatic,Gasoline,485,3.8,278640,Blue,100000
+Mazda,3,2012,Hatchback,5,Lefthanded,Automatic,Diesel,182,2.2,319662,Red,5690
+Mazda,3,2012,Hatchback,5,Lefthanded,Automatic,Gasoline,260,2.2,144963,Black,5000
+Subaru,Forester,2013,SUV,5,Lefthanded,Manual,Diesel,147,2.0,192102,Black,10200
+Mazda,CX-5,2012,SUV,5,Lefthanded,Manual,Gasoline,162,2.0,78327,Black,11600
+Lexus,RX,2008,SUV,5,Lefthanded,Automatic,Gasoline,276,3.5,230239,White,9500
+Mazda,CX-5,2018,SUV,5,Lefthanded,Manual,Gasoline,162,2.0,19519,White,30000
+Subaru,Legacy,2010,Wagon,5,Lefthanded,Automatic,Gasoline,173,2.5,335305,Green,8600
+Nissan,X-Trail,2016,SUV,5,Lefthanded,Manual,Gasoline,177,2.0,230983,Black,17000
+Toyota,Prius,2018,Liftback,5,Lefthanded,Automatic,Hybrid,76,1.5,47441,Light Gray,22000
+Honda,HR-V,2017,SUV,5,Lefthanded,Manual,Gasoline,130,1.5,238527,Red,20000
+Mazda,3,2015,Hatchback,5,Lefthanded,Automatic,Diesel,150,2.2,125630,Red,7900
+Honda,Jazz,2014,Hatchback,5,Lefthanded,Automatic,Gasoline,132,1.5,300545,White,8000
+Mazda,3,2012,Hatchback,5,Lefthanded,Manual,Diesel,114,1.6,117308,White,5000
+Mazda,3,2011,Sedan,5,Lefthanded,Manual,Diesel,114,1.6,245245,Red,4900
+Honda,Jazz,2015,Hatchback,5,Lefthanded,Manual,Hybrid,110,1.5,35001,White,9200
+Lexus,IS,2018,Sedan,5,Lefthanded,Manual,Gasoline,306,3.5,23661,Black,42000
+Nissan,Qashqai,2014,SUV,5,Lefthanded,Automatic,Diesel,130,1.6,121550,Blue,9000
+Lexus,RX,2010,SUV,5,Lefthanded,Automatic,Gasoline,276,3.5,394945,Black,14000
+Subaru,Forester,2016,SUV,5,Lefthanded,Manual,Gasoline,253,2.0,182741,Black,18000
+Subaru,WRX,2012,Sedan,5,Lefthanded,Automatic,Gasoline,268,2.0,36898,Red,9999
+Nissan,Leaf,2017,Hatchback,5,Lefthanded,Automatic,Electric,24,0.0,1121,Black,19000
+Lexus,IS,2013,Sedan,5,Lefthanded,Automatic,Gasoline,318,3.5,13743,White,18000
+Nissan,GT-R,2013,Coupe,2,Lefthanded,Automatic,Gasoline,550,3.8,134540,Red,60000
+Toyota,C-HR,2017,SUV,5,Lefthanded,Automatic,Gasoline,87,1.2,26618,Orange,15000
+Subaru,Impreza,2012,Hatchback,5,Lefthanded,Manual,Gasoline,152,2.0,308507,Black,5600
+Nissan,Qashqai,2015,SUV,5,Lefthanded,Automatic,Diesel,130,1.6,236419,Dark Blue,12000
+Lexus,IS,2014,Sedan,5,Lefthanded,Manual,Hybrid,220,2.5,51249,Black,18000
+Nissan,X-Trail,2014,SUV,5,Lefthanded,Manual,Gasoline,145,2.0,270394,Dark Blue,12000
+Lexus,GS,2015,Sedan,5,Lefthanded,Automatic,Gasoline,306,3.5,66480,White,20000
+Nissan,Qashqai,2015,SUV,5,Lefthanded,Automatic,Diesel,130,1.6,126630,Black,12300
+Nissan,X-Trail,2017,SUV,5,Lefthanded,Manual,Gasoline,170,2.5,189183,White,14000
+Mazda,6,2013,Wagon,5,Lefthanded,Manual,Gasoline,186,2.5,160290,Light Gray,12300
+Nissan,Qashqai,2013,SUV,5,Lefthanded,Manual,Diesel,130,1.6,263376,Black,9000
+Lexus,LX,2012,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,383,5.7,152164,Black,39000
+Honda,Civic,2017,Hatchback35,3,Lefthanded,Automatic,Gasoline,306,2.0,156672,Blue,14900
+Honda,Accord,2011,Sedan,5,Lefthanded,Manual,Diesel,150,2.2,190103,Dark Gray,6300
+Nissan,X-Trail,2014,SUV,5,Lefthanded,Automatic,Gasoline,130,1.6,105786,Dark Blue,13000
+Mazda,3,2013,Hatchback,5,Lefthanded,Manual,Gasoline,99,1.5,260618,Black,5700
+Subaru,Legacy,2014,Wagon,5,Lefthanded,Automatic,Diesel,150,2.0,380173,Red,9800
+Honda,Civic,2013,Hatchback,5,Lefthanded,Automatic,Diesel,150,2.2,328150,Dark Gray,7500
+Lexus,RX,2014,SUV,5,Lefthanded,Automatic,Gasoline,276,3.5,209987,Graphite,25000
+Lexus,GS,2016,Sedan,5,Lefthanded,Automatic,Gasoline,306,3.5,183233,White,36200
+Lexus,IS,2014,Sedan,5,Lefthanded,Manual,Hybrid,220,2.5,98882,Red,18200
+Toyota,Verso,2017,MPV,5,Lefthanded,Manual,Diesel,124,2.0,241438,Red,15800
+Mazda,3,2011,Hatchback,5,Lefthanded,Automatic,Gasoline,150,2.0,181021,Black,4800
+Mazda,6,2018,Sedan,5,Lefthanded,Automatic,Gasoline,162,2.0,68666,Silver,27000
+Mazda,CX-5,2016,SUV,5,Lefthanded,Manual,Gasoline,186,2.5,83940,White,12000
+Nissan,Juke,2015,SUV,5,Lefthanded,Manual,Gasoline,550,3.8,55545,Black,50000
+Lexus,LX,2011,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,383,5.7,225639,Light Gray,45000
+Nissan,Juke,2014,SUV,5,Lefthanded,Manual,Gasoline,117,1.6,101143,Silver,9900
+Mazda,3,2014,Sedan,5,Lefthanded,Automatic,Gasoline,163,2.0,241913,Red,9900
+Honda,Accord,2009,Wagon,5,Lefthanded,Manual,Gasoline,200,2.4,236626,Light Gray,5900
+Mazda,CX-5,2015,SUV,5,Lefthanded,Automatic,Gasoline,162,2.0,377937,Black,11200
+Subaru,WRX STI,2013,Sedan,5,Lefthanded,Automatic,Gasoline,305,2.5,12705,Black,21000
+Mazda,3,2018,Sedan,5,Lefthanded,Manual,Gasoline,163,2.0,169285,White,13000
+Lexus,LX,2017,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,383,5.7,278493,Red,120000
+Mazda,3,2015,Hatchback,5,Lefthanded,Manual,Gasoline,120,2.0,205964,Dark Blue,7900
+Lexus,LX,2013,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,367,5.7,320047,White,59000
+Toyota,RAV4,2015,SUV,5,Lefthanded,Automatic,Gasoline,151,2.0,260742,Red,15000
+Toyota,Avensis,2014,Wagon,5,Lefthanded,Manual,Gasoline,132,1.6,35038,White,8900
+Lexus,LX,2018,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,367,5.7,112224,Dark Gray,150000
+Subaru,WRX STI,2011,Sedan,5,Lefthanded,Automatic,Gasoline,328,2.0,14289,White,16000
+Nissan,Leaf,2010,Hatchback,5,Lefthanded,Automatic,Electric,24,0.0,110151,Gold,6000
+Honda,Civic,2012,Hatchback35,5,Lefthanded,Automatic,Hybrid,110,1.5,190969,Green,7000
+Nissan,Leaf,2014,Hatchback,5,Lefthanded,Automatic,Electric,24,0.0,232423,White,12000
+Lexus,GS,2018,Sedan,5,Lefthanded,Automatic,Gasoline,306,3.5,34042,Black,51500
+Subaru,BRZ,2014,Coupe,2,Lefthanded,Manual,Gasoline,203,2.0,94003,Blue,13000
+Toyota,Avensis,2015,Wagon,5,Lefthanded,Manual,Diesel,148,2.2,224618,White,10000
+Subaru,Impreza,2017,Sedan,5,Lefthanded,Manual,Gasoline,152,2.0,337261,Gold,15000
+Lexus,LX,2011,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,383,5.7,46676,White,45000
+Mazda,3,2012,Hatchback,5,Lefthanded,Automatic,Gasoline,104,1.6,23780,Dark Blue,5700
+Lexus,RX,2011,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,190752,White,19500
+Subaru,WRX,2011,Sedan,5,Lefthanded,Manual,Gasoline,152,2.0,30712,Black,8999
+Lexus,LX,2016,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,271,4.7,115632,Red,70000
+Mazda,6,2013,Wagon,5,Lefthanded,Manual,Gasoline,186,2.5,384055,White,11000
+Toyota,Aygo,2018,Hatchback35,3,Lefthanded,Automatic,Gasoline,81,1.2,2029,Black,12900
+Nissan,Qashqai,2017,SUV,5,Lefthanded,Automatic,Diesel,130,1.6,326455,Blue,16700
+Subaru,Impreza,2016,Sedan,5,Lefthanded,Manual,Gasoline,152,2.0,128153,Black,10800
+Nissan,X-Trail,2015,SUV,5,Lefthanded,Manual,Gasoline,177,2.0,169515,Light Gray,12000
+Honda,Accord,2008,Sedan,5,Lefthanded,Manual,Gasoline,156,2.0,254570,Black,4999
+Toyota,Land Cruiser,2010,Full-Size SUV,5,Lefthanded,Manual,Diesel,170,3.0,386421,Silver,15000
+Mazda,3,2015,Sedan,5,Lefthanded,Automatic,Gasoline,99,1.5,94107,Black,12000
+Honda,Civic,2014,Hatchback35,3,Lefthanded,Manual,Hybrid,110,1.5,135887,White,9000
+Toyota,Camry,2017,Sedan,5,Lefthanded,Automatic,Gasoline,170,2.4,126623,Dark Gray,23000
+Toyota,Avensis,2009,Wagon,5,Lefthanded,Automatic,Gasoline,145,1.8,196265,White,6000
+Subaru,WRX STI,2011,Sedan,5,Lefthanded,Automatic,Gasoline,308,2.0,120071,White,14500
+Honda,Jazz,2018,Hatchback,5,Lefthanded,Automatic,Gasoline,99,1.3,2500,Black,19000
+Toyota,GT86,2016,Coupe,2,Lefthanded,Manual,Gasoline,203,2.0,299465,Asphalt,15000
+Subaru,Forester,2012,SUV,5,Lefthanded,Automatic,Diesel,147,2.0,232011,White,8400
+Subaru,WRX STI,2015,Sedan,5,Lefthanded,Automatic,Gasoline,328,2.0,133353,Blue,28000
+Honda,Jazz,2016,Hatchback,5,Lefthanded,Automatic,Hybrid,110,1.5,161682,White,10000
+Subaru,WRX STI,2011,Sedan,5,Lefthanded,Automatic,Gasoline,305,2.5,220764,Blue,14500
+Mazda,CX-5,2012,SUV,5,Lefthanded,Automatic,Gasoline,186,2.5,128194,Red,9000
+Mazda,6,2015,Sedan,5,Lefthanded,Manual,Diesel,173,2.2,299568,Black,13000
+Honda,Jazz,2016,Hatchback,5,Lefthanded,Manual,Gasoline,132,1.5,166361,Silver,9000
+Subaru,BRZ,2018,Coupe,2,Lefthanded,Manual,Gasoline,203,2.0,27,Blue,27000
+Subaru,Legacy,2018,Wagon,5,Lefthanded,Manual,Gasoline,172,2.5,98952,Green,22000
+Subaru,Legacy,2014,Sedan,5,Lefthanded,Manual,Diesel,150,2.0,266086,Black,8999
+Subaru,Legacy,2010,Sedan,5,Lefthanded,Automatic,Gasoline,285,2.5,172054,Light Gray,5900
+Mazda,3,2009,Hatchback,5,Lefthanded,Manual,Diesel,114,1.6,218197,Silver,4300
+Lexus,RX,2010,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,158353,Black,18000
+Toyota,Verso,2009,MPV,5,Lefthanded,Automatic,Diesel,124,2.0,383694,White,5000
+Honda,Accord,2011,Wagon,5,Lefthanded,Automatic,Gasoline,268,3.5,173025,Red,8000
+Mazda,6,2014,Wagon,5,Lefthanded,Manual,Gasoline,186,2.5,111879,White,11000
+Nissan,GT-R,2013,Coupe,2,Lefthanded,Automatic,Gasoline,480,3.8,70363,Black,59000
+Lexus,LX,2012,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,383,5.7,216911,Black,49000
+Honda,Jazz,2014,Hatchback,5,Lefthanded,Manual,Gasoline,99,1.3,92180,Dark Blue,7000
+Mazda,3,2012,Hatchback,5,Lefthanded,Automatic,Diesel,114,1.6,35219,Black,5200
+Lexus,RX,2009,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,194362,Graphite,15700
+Lexus,RX,2010,SUV,5,Lefthanded,Automatic,Gasoline,276,3.5,91798,Black,18700
+Lexus,LX,2018,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,383,5.7,151619,White,150000
+Toyota,Verso,2017,MPV,5,Lefthanded,Automatic,Gasoline,147,1.8,342028,Red,15000
+Toyota,C-HR,2017,SUV,5,Lefthanded,Automatic,Hybrid,122,1.8,348579,Red,16000
+Nissan,Qashqai,2018,SUV,5,Lefthanded,Automatic,Gasoline,115,1.2,266350,White,18000
+Toyota,GT86,2014,Coupe,2,Lefthanded,Manual,Gasoline,203,2.0,115495,Asphalt,13500
+Lexus,LX,2015,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,313,4.6,192409,Black,100000
+Lexus,IS,2016,Sedan,5,Lefthanded,Manual,Gasoline,260,3.5,86719,Black,22000
+Toyota,C-HR,2018,SUV,5,Lefthanded,Automatic,Gasoline,87,1.2,232825,Magnetic Gray,16000
+Mazda,3,2016,Sedan,5,Lefthanded,Manual,Gasoline,163,2.0,259339,White,9900
+Mazda,CX-5,2015,SUV,5,Lefthanded,Manual,Diesel,173,2.2,119328,White,12200
+Subaru,WRX STI,2013,Sedan,5,Lefthanded,Automatic,Gasoline,328,2.0,157578,Black,27000
+Nissan,Qashqai,2017,SUV,5,Lefthanded,Manual,Diesel,130,1.6,207137,Black,15000
+Honda,Civic,2015,Hatchback35,5,Lefthanded,Manual,Gasoline,141,1.8,121641,Light Gray,13000
+Lexus,LX,2008,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,313,4.6,266172,Red,35000
+Lexus,LX,2008,Full-Size SUV,5,Lefthanded,Automatic,Gasoline,383,5.7,279907,Black,34000
+Nissan,X-Trail,2016,SUV,5,Lefthanded,Automatic,Gasoline,170,2.5,278191,White,16500
+Subaru,WRX STI,2013,Sedan,5,Lefthanded,Automatic,Gasoline,328,2.0,188736,White,25500
+Mazda,6,2013,Sedan,5,Lefthanded,Manual,Diesel,147,2.2,117365,White,11000
+Lexus,RX,2013,SUV,5,Lefthanded,Automatic,Hybrid,245,3.5,163144,Light Gray,35000
+Toyota,Aygo,2015,Hatchback35,5,Lefthanded,Manual,Gasoline,64,1.0,294004,Blizzard,5000
+Subaru,Forester,2018,SUV,5,Lefthanded,Manual,Diesel,147,2.0,18400,White,24000
+Lexus,RX,2012,SUV,5,Lefthanded,Automatic,Gasoline,299,3.5,113138,Black,15000
+Toyota,RAV4,2014,SUV,5,Lefthanded,Automatic,Gasoline,151,2.0,125230,Red,13000
+Lexus,RX,2011,SUV,5,Lefthanded,Automatic,Gasoline,272,3.5,95809,Silver,16100
+Nissan,X-Trail,2017,SUV,5,Lefthanded,Manual,Gasoline,145,2.0,36350,Black,19000
+Nissan,GT-R,2008,Coupe,2,Lefthanded,Automatic,Gasoline,570,3.8,229170,Red,40000
+Mazda,3,2016,Sedan,5,Lefthanded,Automatic,Gasoline,99,1.5,275581,White,9000
+Mazda,CX-5,2012,SUV,5,Lefthanded,Manual,Diesel,173,2.2,156709,Light Gray,9999
+Toyota,Avensis,2012,Wagon,5,Lefthanded,Manual,Diesel,125,2.0,65205,White,9110
+Toyota,Prius,2018,Liftback,5,Lefthanded,Automatic,Hybrid,76,1.5,21538,Red,15000
+Lexus,RX,2012,SUV,5,Lefthanded,Automatic,Gasoline,277,3.5,97777,Graphite,20000
+Toyota,Camry,2015,Sedan,5,Lefthanded,Automatic,Gasoline,170,2.4,123924,White,12000

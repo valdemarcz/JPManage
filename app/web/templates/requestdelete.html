@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+            <div class="notification ">
+                {{ messages[0] }} 
+            </div>
+
+        {% endif %}
+{% endwith %}
+ <section class="Material-contact-section section-padding section-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <h1 class="section-title">Here you can request deleting your account</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <p></p>
+
+                <div class="find-widget">
+                 Company:  <a href="/">JPManage</a>
+                </div>
+                <div class="find-widget">
+                 Address: <span>Białystok</span>
+                </div>
+                <div class="find-widget">
+                  Phone:  <span>*** *** **</span>
+                </div>
+            
+              </div>
+              <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                  <form class="shake" action="/requestdelete" role="form" method="post" id="delete_acc" name="contact-form" data-toggle="validator">
+                      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label">Reason</label>
+                          <textarea class="form-control" rows="3" id="reason" name="reason" required data-error="Write your reason"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      
+                      <div class="form-submit mt-5">
+                          <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Request deleting account</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+
+{% endblock %}

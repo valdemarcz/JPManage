@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+            <div class="notification ">
+                {{ messages[0] }} 
+            </div>
+
+        {% endif %}
+{% endwith %}
+ <section class="Material-contact-section section-padding section-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                  <h1 class="section-title">Propositions or questions can be sent here</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                <p></p>
+
+                <div class="find-widget">
+                 Company:  <a href="/">JPManage</a>
+                </div>
+                <div class="find-widget">
+                 Address: <span>Białystok</span>
+                </div>
+                <div class="find-widget">
+                  Phone:  <span>*** *** **</span>
+                </div>
+            
+              </div>
+              <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                  <form class="shake" action="/contact" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                    <div class="form-group label-floating">
+                        <label class="control-label" for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group label-floating">
+                        <label class="control-label" for="email">Email</label>
+                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group label-floating">
+                        <label class="control-label">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group label-floating">
+                          <label for="message" class="control-label">Message</label>
+                          <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-group label-floating">
+                          <input type="checkbox" name="rodosubmit" required value="Agree">  I give consent to store my submitted information for contacting purposes. <a href="/privacy_policy">(Read the Terms of Service)</a><br>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="form-submit mt-5">
+                          <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                          <div id="msgSubmit" class="h3 text-center hidden"></div>
+                          <div class="clearfix"></div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>
+
+{% endblock %}

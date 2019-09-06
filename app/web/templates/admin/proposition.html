@@ -1,0 +1,238 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+<div class="maincontainer">
+    <div class="title"> 
+        <h1> {{ car.make }}  {{ car.model }}  {{ car.fuel_type }}  {{ car.pyear }}</h1>
+    </div>
+
+{% if car.photos %}
+<div class="container">
+   
+  {% for photo in car.photos %}
+  <div class="mySlides">
+    <div class="numbertext">{{ photo.id }}</div>
+      <img src="{{ url_for('static', filename=photo.photo_name) }}" style="width:100%; ">
+    </div>
+    {% endfor %}
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+ 
+  <div class="row">
+      {% for photo in car.photos %}
+    <div class="column">
+      <img class="demo cursor" src="{{ url_for('static', filename=photo.photo_name) }}" style="width:100%" onclick="currentSlide('{{ photo.id }}')" alt="{{ car.make}} {{ car.model }}">
+    </div>
+    {% endfor %}
+  
+  </div>
+</div>
+{%endif%}
+<div class="title"> 
+    <h1> Details</h1>
+    <br>
+    {% if car.VIN %}
+    <p>VIN: {{ car.VIN }} </p>
+    {% endif %}
+    <p>Make: {{ car.make }} </p>
+    <p>Model: {{ car.model }} </p>
+    <p>Production year: {{ car.pyear }}/{{ car.prod_month }} y.</p>
+    <p>Engine: {{ car.engine_capacity }}l. {{ car.engine_power }}kW </p>
+    <p>Fuel Type: {{ car.fuel_type }} </p>
+    <p>Body Type: {{ car.body_type }} </p>
+    <p>Color: {{ car.color }} </p>
+    <p>Gearbox: {{ car.gearbox }} </p>
+    <p>Mileage: {{ car.mileage }}km </p>
+    <p>Doors: {{ car.number_of_doors }} </p>
+    <p>Steering column: {{ car.steering_wheel_side }} </p>
+    <br>
+    {% if car.options %}
+    <h1>Features</h1>
+    <br>
+    {% for feature in car.options %}
+        <p>{{ feature.option }}</p>
+    {% endfor %}
+    {% endif %}
+    <br>
+    <h1>Description</h1>
+    <br>
+    <p>{{ car.description }}</p>
+    <br>
+    {% if car.price %}
+    <h1>Price: {{ car.price }} Euro</h1>
+    <br>
+    {% endif %}
+    <br>
+    <div class="buttons">
+        <a class='confirm' href="../../confirm/{{ car.id }}/"> Confirm</a>
+        <a class='propose' href="../../change/{{ car.id }}"> Chenge proposition</a>
+        <a class='discard' href="../../discard/{{ car.id }}"> Discard</a>
+            
+    </div>
+</div>
+
+</div>
+<style>
+* {
+  box-sizing: border-box;
+}
+.maincontainer{
+    display: flex;
+    width: 100%;
+    
+    flex-direction: column;
+    
+}
+h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color:black;
+}
+p{
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.container {
+  display: block;
+  width: 60%;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.mySlides {
+  display: none;
+  
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.confirm:link, .confirm:visited {
+  background-color: green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+.propose:link, .propose:visited {
+  background-color: #008CBA;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+.discard:link, .discard:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+{% endblock %}

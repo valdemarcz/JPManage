@@ -1,0 +1,53 @@
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .container {
+    max-width: 960px;
+  }
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+.form-check-inline{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#photo{
+  height: 30px;
+  margin-top: 85px;
+}
+
+.paddingtop{
+  padding-top: 50px; 
+}
+
+.paddingtop20{
+  padding-top: 20px;
+}
+.features{
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+.row{
+  width: 80%;
+} 
+

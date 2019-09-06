@@ -1,0 +1,147 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+            <div class="notification is-danger">
+                {{ messages[0] }} 
+            </div>
+
+        {% endif %}
+{% endwith %}
+<form method="POST" action="/search" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">  
+                    <label for="make">Make</label>  
+                    {{ form.make(class_="form-control", data_toggle="tooltip", data_placement="right", title="Tooltip on right") }}
+                    
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">    
+                    <label for="model">Model</label>  
+
+                    {{ form.model(class_="form-control") }}
+                        
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-sm">
+                    <div class="form-group">  
+                        <label for="gearbox">Gearbox</label>     
+                        
+                        {{ form.gearbox(class_="form-control") }}
+    
+                    </div>
+                </div>
+                
+                <div class="col-sm">
+                        <div class="form-group">    
+                            <label for="fuel">Fuel type</label>     
+                            {{ form.fuel(class_="form-control") }}
+                        </div>
+                    </div>
+        </div>
+        
+        <div class="row">
+           <div class="col-sm">
+                <div class="form-group"> 
+                    <label for="num_doors">Number of doors</label>    
+                    {{ form.num_doors(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group"> 
+                    <label for="body">Body type</label>    
+                    {{ form.body(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group"> 
+                    <label for="color">Color</label>    
+                    {{ form.color(class_="form-control") }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-sm">
+                    <div class="form-group"> 
+                        <label for="pricefrom">Price from</label>    
+                        {{ form.pricefrom(class_="form-control") }}
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group"> 
+                        <label for="priceto">Price to</label>    
+                        {{ form.priceto(class_="form-control") }}
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group"> 
+                        <label for="yearfrom">Year from</label>    
+                        {{ form.yearfrom(class_="form-control") }}
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group"> 
+                        <label for="yearto">Year to</label>    
+                        {{ form.yearto(class_="form-control") }}
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col paddingtop">
+                <div class="form-group">
+                    {{ form.submit(class_="btn btn-success btn-lg btn-block") }}
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+    var csrf_token = "{{ csrf_token() }}";  
+    let make_select = document.getElementById('make');
+    let model_select = document.getElementById('model');
+
+    make_select.onchange = function(){
+        make = make_select.value;
+
+        fetch('/process/' + make_select.value,{
+            headers:{
+                "X-CSRFToken" : csrf_token
+            }
+        }).then(function(response){
+            response.json().then(function(data){
+                let optionHTML = '';
+                for (let model of data.models){
+                    optionHTML += '<option value="' + model.model + '">' + model.model + '</option>';
+                }
+
+                model_select.innerHTML = optionHTML;
+            });
+        });
+    }
+
+    function getSelectedText(elementId) {
+    var elt = document.getElementById(elementId);
+
+    if (elt.selectedIndex == -1)
+        return null;
+
+    return elt.options[elt.selectedIndex].text;
+}
+
+
+</script>
+{% endblock %}

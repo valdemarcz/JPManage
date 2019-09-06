@@ -1,0 +1,341 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+            <div class="notification is-danger">
+                {{ messages[0] }} 
+            </div>
+
+        {% endif %}
+{% endwith %}
+
+<style>
+html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+
+  
+  .pricing-header {
+    max-width: 700px;
+  }
+  
+  .card-deck .card {
+    min-width: 220px;
+  }
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
+.form-check-inline{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#photo{
+  height: 30px;
+  margin-top: 85px;
+}
+
+.paddingtop{
+  padding-top: 50px; 
+}
+
+.paddingtop20{
+  padding-top: 20px;
+}
+.features{
+  padding-left: 70px;
+  padding-top: 30px;
+}
+
+
+
+
+</style>
+<form method="POST" action="/add_new_car" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    <div class="container">
+            <div class="row">
+                    <div class="col-sm">
+                        <div class="form-group">  
+                            <label for="vin">VIN</label>  
+                               
+                            <input class="form-control" type="text" id="vin" name="vin">
+                            
+                        </div>
+                    </div>
+                    
+            </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="form-group">  
+                    <label for="make">Make</label>  
+                       
+                    {{ form.make(class_="form-control") }}
+                    
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">    
+                    <label for="model">Model</label>  
+
+                    {{ form.model(class_="form-control") }}
+                        
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="form-group">
+                    <label for="engine_power">Engine power</label>   
+                    <br>   
+                    <input  class="form-control" type="number" required="required" id="engine_power" name="engine_power" min="0">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group"> 
+                    <label for="body">Body type</label>    
+                    {{ form.body(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">    
+                    <label for="fuel">Fuel type</label>  
+                    
+                    {{ form.fuel(class_="form-control") }}
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group"> 
+                        <label for="engine_capacity">Engine capacity</label>   
+                        <br>      
+                    <input class="form-control" type="number" required="required"  id="engine_capacity" name="engine_capacity" min="0" step="0.1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">  
+                    <label for="gearbox">Gearbox</label>     
+                    
+                    {{ form.gearbox(class_="form-control") }}
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group"> 
+                    <label for="num_doors">Number of doors</label>    
+                    {{ form.num_doors(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">    
+                    <label for="mileage">Mileage</label>
+                    <br> 
+                    <input class="form-control" type="number" required="required" id="mileage" name="mileage" min="0">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">    
+                    <label for="steering">Steering wheel side</label> 
+                    {{ form.steering(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group"> 
+                    <label for="color">Color</label>    
+                    {{ form.color(class_="form-control") }}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group"> 
+                    <label for="manufacture">Date of manufacture</label>    
+                    <br>
+                    <input class="form-control" type="month" required="required" id="manufacture" name="manufacture">
+                </div>
+            </div>
+        </div>
+        <h5 class="paddingtop">Features</h5>
+        <div class="features">
+            <div class="row">
+
+                {% for i in options %}
+                <div class="form-check form-check-inline">
+                    <input type="checkbox" id="id_{{i.option}}" name="options" class="form-check-input" value="{{i.id}}">
+                    <label class="form-check-label" for="id_{{i.option}}">{{i.option}}</label>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+
+       <div class="paddingtop row">
+            <div class="col-md-5">
+                
+                {{ form.photo(multiple="multiple")}}
+                {% for error in form.photo.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea class="form-control" rows = "5" cols = "70" name = "description" id="description">
+                    </textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 paddingtop">
+                <div class="form-group">
+                        <button class="btn btn-outline-info btn-lg" id="getprice" onclick='price' type="button">Proposed price</button>
+                </div>
+            </div>
+            <div class="col-md-3 paddingtop20">
+                <div class="form-group">
+                       
+                        <input type="radio" id="price" name="price" class="form-check-input" value="reg1">
+                        <label id="price1lbl" class="form-check-label" for="price1">Price by Regressor-1</label>
+                        <h3 id="price1sum"></h3>
+                        <br> 
+                        
+                </div>
+            </div>
+            <div class="col-md-3 paddingtop20">
+                    <div class="form-group">
+                            
+                            <input type="radio" id="price2" name="price2" class="form-check-input" value="reg2">
+                            <label id="price2lbl" class="form-check-label" for="price2">Price by Regressor-2</label>
+                            <h3 id="price2sum"></h3>
+                            <br> 
+                            
+                    </div>
+                </div>
+                <div class="col-md-3 paddingtop20">
+                        <div class="form-group">
+                                
+                                <input class="is-checkradio" type="radio" id="priceown" name="price" class="form-check-input" value="own">
+                                <label id="priceownlbl" class="form-check-label" for="priceown">Own price</label>
+                                <br> 
+                                <input class="form-control" type="number" id="ownprice" name="ownprice" min="0">
+                        </div>
+                    </div>
+            <div class="col paddingtop">
+                <div class="form-group">
+                    {{ form.submit(class_="btn btn-outline-success btn-lg btn-block") }}
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</form>
+
+
+{% if modelpicked %}
+{{ modelpicked }}
+{% endif %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+ var csrf_token = "{{ csrf_token() }}";
+
+
+document.getElementById('ownprice').onchange = function(){
+    document.getElementById('priceown').value=document.getElementById('ownprice').value ;
+    document.getElementById('priceownlbl').innerText="Own price:   " + document.getElementById('ownprice').value + " Euro";
+};
+
+
+    let make_select = document.getElementById('make');
+    let model_select = document.getElementById('model');
+
+    make_select.onchange = function(){
+        make = make_select.value;
+
+        fetch('/process/' + make_select.value).then(function(response){
+            response.json().then(function(data){
+                let optionHTML = '';
+                for (let model of data.models){
+                    optionHTML += '<option value="' + model.model + '">' + model.model + '</option>';
+                }
+
+                model_select.innerHTML = optionHTML;
+            });
+        });
+    }
+
+    function getSelectedText(elementId) {
+    var elt = document.getElementById(elementId);
+
+    if (elt.selectedIndex == -1)
+        return null;
+
+    return elt.options[elt.selectedIndex].text;
+}
+
+
+let button = document.getElementById('getprice');
+button.onclick = function price(){
+
+var make_selected = getSelectedText('make');
+var model_selected = getSelectedText('model');
+var body_selected = getSelectedText('body');
+var fuel_selected = getSelectedText('fuel');
+var gearbox_selected = getSelectedText('gearbox');
+var num_doors_selected = getSelectedText('num_doors');
+var steering_selected = getSelectedText('steering');
+var color_selected = getSelectedText('color');
+var eng_pow = document.getElementById('engine_power').value;
+var eng_cap = document.getElementById('engine_capacity').value;
+var mileage = document.getElementById('mileage').value;
+var manufacture = document.getElementById('manufacture').value;
+
+if(eng_pow && eng_cap && mileage && manufacture){
+
+    var data = {make: make_selected, model: model_selected, body: body_selected, fuel: fuel_selected, gearbox: gearbox_selected, num_doors: num_doors_selected, steering: steering_selected, color: color_selected, engp: eng_pow, engc: eng_cap, mileage: mileage, manufacture: manufacture};
+    fetch('/price1', {
+    method: 'POST', 
+    body: JSON.stringify({data}), 
+    headers:{
+        'Content-Type': 'application/json',
+        "X-CSRFToken": csrf_token
+    }
+    }).then(res => res.json())
+    .then(response =>  document.getElementById('price').value=response)
+    .then(response =>  document.getElementById('price1sum').innerText = response + " Euro")
+    .catch(error => console.error('Error:', error));
+
+
+    fetch('/price2', {
+    method: 'POST', 
+    body: JSON.stringify({data}), 
+    headers:{
+        'Content-Type': 'application/json',
+        "X-CSRFToken": csrf_token
+    }
+    }).then(res => res.json())
+    .then(response =>  document.getElementById('price2').value=response)
+    .then(response =>  document.getElementById('price2sum').innerText = response + " Euro")
+    .catch(error => console.error('Error:', error));
+}
+else{
+    confirm("We can't propose you a price without knowing parameters of price");
+}
+}
+</script>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="column is-4 is-offset-4">
+    <div class="box">
+           
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+    
+                <div class="notification">
+                    {{ messages[0] }}
+                </div>
+    
+            {% endif %}
+            {% endwith %}
+    
+            
+                    <h3>Forgot password</h3>
+                    <p>Please enter your email address and we will send a password reset link to your email.</p>
+                    {% if error %}
+                    <div class="alert alert-danger" role="alert">{{ error }}</div>
+                    {% endif %}
+
+                    <form method="POST" action="{{ url_for('.forgot')}}" role="form">
+                        {{ form.hidden_tag() }}
+                        {{ form.email(class_="form-control") }}
+
+                        <button type="submit" class="btn btn-default"> Reset password</button>
+
+                    </form>
+              
+    </div>
+</div>
+
+
+{% endblock %}

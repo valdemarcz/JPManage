@@ -1,0 +1,224 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="maincontainer">
+    <div class="title"> 
+        <h1> {{ car.make }}  {{ car.model }}  {{ car.fuel_type }}  {{ car.pyear }}</h1>
+    </div>
+
+{% if car.photos %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+      
+          <div id="mdb-lightbox-ui"></div>
+      
+          <div class="mdb-lightbox no-margin">
+              {% for photo in car.photos %}
+              <figure class="col-md-4">
+                  <a href="{{ url_for('static', filename=photo.photo_name) }}" data-size="1600x1067">
+                    <img alt="picture" src="{{ url_for('static', filename=photo.photo_name) }}"
+                      class="img-fluid">
+                  </a>
+                </figure>
+              {% endfor %}
+            
+      
+
+
+
+  
+  
+          
+            
+    </div>
+{%endif%}
+<div class="title"> 
+    <h1> Details</h1>
+    <br>
+
+    <p>Make: {{ car.make }} </p>
+    <p>Model: {{ car.model }} </p>
+    <p>Production year: {{ car.pyear }}/{{ car.prod_month }} y.</p>
+    <p>Engine: {{ car.engine_capacity }}l. {{ car.engine_power }}kW </p>
+    <p>Fuel Type: {{ car.fuel_type }} </p>
+    <p>Body Type: {{ car.body_type }} </p>
+    <p>Color: {{ car.color }} </p>
+    <p>Gearbox: {{ car.gearbox }} </p>
+    <p>Mileage: {{ car.mileage }}km </p>
+    <p>Doors: {{ car.number_of_doors }} </p>
+    <p>Steering column: {{ car.steering_wheel_side }} </p>
+    <br>
+    {% if car.options %}
+    <h1>Features</h1>
+    <br>
+    {% for feature in car.options %}
+        <p>{{ feature.option }}</p>
+    {% endfor %}
+    {% endif %}
+    <br>
+    <h1>Description</h1>
+    <br>
+    <p>{{ car.description }}</p>
+    <br>
+    <h1>Price: {{ car.price }} Euro</h1>
+    <br>
+    <div class="buttons">
+        <a class='confirm' href="../../confirm/{{ car.id }}"> Confirm</a>
+        <a class='propose' href="../../change/{{ car.id }}"> Chenge proposition</a>
+        <a class='discard' href="../../discard/{{ car.id }}"> Discard</a>
+            
+    </div>
+</div>
+
+</div>
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+.maincontainer{
+    display: flex;
+    width: 100%;
+    
+    flex-direction: column;
+    
+}
+h1{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color:black;
+}
+p{
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  display: block;
+  width: 60%;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+.confirm:link, .confirm:visited {
+  background-color: green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+.propose:link, .propose:visited {
+  background-color: #008CBA;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+.discard:link, .discard:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+<script>
+// MDB Lightbox Init
+$(function () {
+$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
+</script>
+{% endblock %}

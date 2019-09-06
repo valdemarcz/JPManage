@@ -1,0 +1,196 @@
+
+<footer class="page-footer font-small unique-color-dark">
+       
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+       
+       <style>
+        #myCookieConsent {
+    z-index: 999;
+    min-height: 20px;
+    font-family: OpenSans, arial, "sans-serif";
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: fixed;
+    color: #FFF;
+    bottom: 0px;
+    right: 10px;
+    display: none;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+#myCookieConsent div {
+    padding: 5px 0 0;
+}
+#myCookieConsent a {
+    color: #17a2b8;
+    display: inline-block;
+    padding: 0 10px;
+}
+#myCookieConsent a:hover {
+	color: #17a2b8;
+}
+#myCookieConsent a#cookieButton {
+    display: inline-block;
+    color: #000000;
+    font-size: 1.1em;
+	background: #17a2b8;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    float: right;
+    border-radius: 20px;
+}
+#myCookieConsent a#cookieButton:hover {
+    background: #17a2b8;
+	color: #000;
+}
+        </style>
+        <div style="background-color: #0f6288;">
+          <div class="container text-center">
+      
+            <div class="row py-4 d-flex align-items-center">
+      
+              <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0"></h6>
+              </div>
+  
+              <div class="col-md-6 col-lg-7 text-center text-md-right">
+      
+                <a class="fb-ic">
+                  <i class="fab fa-facebook-f white-text mr-4"> </i>
+                </a>
+
+                <a class="tw-ic">
+                  <i class="fab fa-twitter white-text mr-4"> </i>
+                </a>
+
+                <a class="gplus-ic">
+                  <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                </a>
+
+                <a class="li-ic">
+                  <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                </a>
+
+                <a class="ins-ic">
+                  <i class="fab fa-instagram white-text"> </i>
+                </a>
+      
+              </div>
+      
+            </div>
+
+      
+          </div>
+        </div>
+      
+
+        <div class="container text-center text-md-left mt-5">
+      
+          <div class="row mt-3">
+      
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+      
+              <h6 class="text-uppercase font-weight-bold">JPManage</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>JPManage helps you buy or sell cars with fair prices.</p>
+      
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+      
+              <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <a href="{{ url_for('mainweb.index') }}">Home page</a>
+              </p>
+              <p>
+                <a href="{{ url_for('mainweb.contact') }}">Contact Form</a>
+              </p>
+              <p>
+                <a href="{{ url_for('mainweb.faq') }}">FAQ</a>
+              </p>
+              <p>     
+                <a href="{{ url_for('mainweb.policy') }}" class="guide-embed guide-color-2 guide-branded guide-button-policy" title="Polityka Prywatności" onclick="TINY.box.show({iframe:'https://prod.guideme24.pl/privacy-policy/2312',boxid:'frameless',width:760,height:450,fixed:false}); return false;">Privacy Policy</a>
+              </p>
+              {% if current_user.is_authenticated %}
+              <p>     
+                <a href="{{ url_for('mainweb.requestdelete') }}" class="guide-embed guide-color-2 guide-branded guide-button-policy" title="Polityka Prywatności" onclick="TINY.box.show({iframe:'https://prod.guideme24.pl/privacy-policy/2312',boxid:'frameless',width:760,height:450,fixed:false}); return false;">Request account delete</a>
+              </p>
+              {% endif %}
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+      
+              <h6 class="text-uppercase font-weight-bold">Contact</h6>
+              <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+              <p>
+                <i class="fas fa-home mr-3"></i> Białystok</p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> ****@***.***</p>
+              <p>
+                <i class="fas fa-phone mr-3"></i> *** *** ***</p>
+              
+            </div>
+      
+          </div>
+      
+        </div>
+        
+        <div id="myCookieConsent">
+          <a id="cookieButton">Got it</a>
+          <div>This&nbsp;website is&nbsp;using&nbsp;cookies. <a href="/privacy_policy">More&nbsp;details</a></div>
+        </div>
+
+          
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="/"> WCz</a>
+        </div>
+      <script>
+function GetCookie(name) {
+  var arg=name+"=";
+  var alen=arg.length;
+  var clen=document.cookie.length;
+  var i=0;
+  while (i<clen) {
+	var j=i+alen;
+	if (document.cookie.substring(i,j)==arg)
+	  return "here";
+	i=document.cookie.indexOf(" ",i)+1;
+	if (i==0) break;
+  }
+  return null;
+}
+function testFirstCookie(){
+	var offset = new Date().getTimezoneOffset();
+	if ((offset >= -180) && (offset <= 0)) { 
+		var visit=GetCookie("cookieCompliancyAccepted");
+		if (visit==null){
+		   $("#myCookieConsent").fadeIn(400);	
+	   } else {
+	   }		
+	}
+}
+$(document).ready(function(){
+    $("#cookieButton").click(function(){
+		console.log('Understood');
+		var expire=new Date();
+		expire=new Date(expire.getTime()+7776000000);
+		document.cookie="cookieCompliancyAccepted=here; expires="+expire+";path=/";
+        $("#myCookieConsent").hide(400);
+    });
+	testFirstCookie();
+});
+</script>
+
+      </footer>

@@ -1,0 +1,31 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+
+
+
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">User ID</th>
+        <th scope="col">Reason</th>
+        <th scope="col">Accept</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for request in requests %}
+      <tr>
+        <th scope="row">{{ request.id }}</th>
+        <td>{{ request.user_id }}</td>
+        <td>{{ request.reason }}</td>
+        <td><a class='delete' href="delete/{{ request.user_id }}"> Delete</a></td>
+      </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+
+
+
+
+{% endblock %}

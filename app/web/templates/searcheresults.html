@@ -1,0 +1,159 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+
+            <div class="notification is-danger">
+                {{ messages[0] }} 
+            </div>
+
+        {% endif %}
+{% endwith %}
+<style>
+.cars_container{
+    display:flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.element{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    
+}
+.img{
+    display: block;
+    width: 250px;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.content{
+    padding-left: 40px;
+    padding-top: 40px;
+    text-align: center;
+    width: 100%;
+    color: #000;
+}
+.price h4{
+    color: #000;
+}
+.make_model p{
+    font-size: 30px;
+    display: inline;
+    padding-left: 20px;
+    
+}
+.data p{
+    display: inline;
+    padding-left: 5px;
+}
+.data{
+    font-size: 15px;
+    
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.red{background-color: #f44336;}
+.blue {background-color: #008CBA;}
+
+.confirm:link, .confirm:visited {
+  background-color: green;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+.propose:link, .propose:visited {
+  background-color: #008CBA;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+.discard:link, .discard:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .element{
+      display: flex;
+      flex-direction: column;
+  }
+  .make_model{
+      font-size: 12px;
+  }
+
+  .content{
+      padding-left: 0; 
+  }
+}
+</style>
+
+<div class="cars_container">
+       {% if cars==empty %}
+            <h1>Sorry, there are no cars satisfying your specification at present.</h1>
+       {% endif %}
+
+       {% for car in cars %}
+      
+       <div class="element">
+            <input type="hidden" id="" value="3487">
+            <div class="img">
+                {% if car.photos[0] %}
+                    <img width="250px" height="250px" src="{{ url_for('static', filename=car.photos[0]) }}" alt="No Photo">
+                {% else %}
+                    <img width="250px" height="250px" src="{{ url_for('static', filename='logo.png') }}" alt="No Photo">
+                {% endif %}
+            </div>
+            <div class="content">
+                <div class="make_model">
+                        <p>{{ car.make }}</p><p> {{ car.model }}</p>  
+                </div>
+                <div class="data">
+                    <p>Capacity: {{ car.engine_capacity }} l</p>, <p>Power: {{ car.engine_power }} kW</p>,  <p>{{ car.pyear }}</p>,  <p>Gearbox: {{ car.gearbox }}</p> <br>
+                    <p>Mileage: {{ car.mileage }} km</p>, <p>Fuel: {{ car.fuel_type }}</p>,<br> <p>Body: {{ car.body_type }}</p>
+                </div>
+                <div class="price">
+                    <h4>{{ car.price }} Euro {{ car.status }}</h4> 
+                </div>
+                <div class="buttons">
+                    {%  if car.status == "Proposition_change" %}
+                    <a class='confirm' href="confirm/{{ car.id }}"> Confirm</a>
+                    <a class='discard' href="delete/{{ car.id }}"> Discard</a>
+                    {% endif %}
+                    <a style="width: 100%;"class='propose sm' href="details/{{ car.id }}"> Details</a>
+                    
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+
+</div>
+
+
+
+{% endblock %}

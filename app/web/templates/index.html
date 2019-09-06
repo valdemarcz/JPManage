@@ -1,0 +1,187 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<body>
+   
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+          
+          <link href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+        
+          <link href="{{ url_for('static', filename='lib/animate/animate.min.css') }}" rel="stylesheet">
+          <link href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+          <link href="{{ url_for('static', filename='lib/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
+          <link href="{{ url_for('static', filename='lib/magnific-popup/magnific-popup.css') }}" rel="stylesheet">
+        
+          <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+        
+  <section id="intro">
+
+    <div class="intro-text">
+      <h2>Welcome to JPManage</h2>
+      <p>Welcome to JPManage
+          This system will help you in selling or buying a car for a fair price. We will help you to determine the car value to ensure the fairest deal. </p>
+      <a href="#features" class="btn-get-started scrollto">Get Started</a>
+    </div>
+
+  </section>
+
+  <main id="main">
+
+    <section id="features">
+        <div class="container">
+  
+          <div class="row">
+  
+            <div class="col-lg-8 offset-lg-4">
+              <div class="section-header wow fadeIn" data-wow-duration="1s">
+                <h3 class="section-title">System Features</h3>
+                <span class="section-divider"></span>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-5 features-img">
+              <img src="{{ url_for('static', filename='img/product-features.jpg') }}" alt="" class="wow fadeInLeft">
+            </div>
+  
+            <div class="col-lg-8 col-md-7 ">
+  
+              <div class="row">
+  
+                <div class="col-lg-6 col-md-6 box wow fadeInRight">
+                  <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                  <h4 class="title">Find a car to buy</h4>
+                  <p class="description">Find a car in good condition you might consider buying.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                    <h4 class="title">Propose your car</h4>
+                    <p class="description">You can also propose your car for us to sell.</p>
+                  </div>
+                <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.1s">
+                  <div class="icon"><i class="icon ion-social-euro"></i></div>
+                  <h4 class="title">Get a fair deal</h4>
+                  <p class="description">Our AI algorithms will ensure that you get a fair deal.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 box wow fadeInRight" data-wow-delay="0.2s">
+                  <div class="icon"><i class="ionicons ion-ios-help-outline"></i></div>
+                  <h4 class="title">Questions and suggestions</h4>
+                  <p class="description">Any concerning questions can be asked using the contact form found in the footer.</p>
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </section>
+    <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Adding a car to JPManage</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+            A step-by-step guide how to add your car to this system.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img wow fadeInLeft">
+            <img src="{{ url_for('static', filename='img/about-img.jpg') }}" alt="add car">
+          </div>
+
+          <div class="col-lg-6 content wow fadeInRight">
+            <h3>Note: in order to add your car to the system you have to login or sign up.</h3>
+            <h3>Not logged-in users can only search for cars which are currently up for sale.</h3>
+            <i>
+                Once you have logged in, indicate the make of your car. <br>
+                *Certain makes are absent in our system. However, we are working on adding them to the system.
+            </i>
+            <p><b>How to add an offer:</b></p>
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Sign up / login</li>
+              <li><i class="ion-android-checkmark-circle"></i> Press "Add new car" from the header.</li>
+              <li><i class="ion-android-checkmark-circle"></i> If you want to find out the price of your car, fill in all data before "Features" except VIN.</li>
+              <li><i class="ion-android-checkmark-circle"></i> After filling in all data press "Proposed price" to learn the 2 prices generated by our AI algorithms.</li>
+              <li><i class="ion-android-checkmark-circle"></i> If you are willing to propose your car for us, choose one of the generated prices or propose your own.</li>
+              <li><i class="ion-android-checkmark-circle"></i> You may also add photos, additional features or descriptions of your car.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Pressing "Send offer" will add your car to our database.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Every logged-in user can see his/her cars by pressing "My cars" on header.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Note: a notification will appear if you haven't added a car.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Once your proposition is analysed by the administrator, it shall be either accepted or rejected.</li>
+              <li><i class="ion-android-checkmark-circle"></i> If your offer is accepted, you may contact us in  order to discuss the details.</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section-bg">
+        <div class="container-fluid">
+          <div class="section-header">
+            <h3 class="section-title">Searching for cars in JPManage</h3>
+            <span class="section-divider"></span>
+            <p class="section-description">
+              a step-by-step guide how to search for cars in the system.
+            </p>
+          </div>
+  
+          <div class="row">
+              
+      
+            <div class="col-lg-6 content wow fadeInLeft">
+              <h3>You may search cars in our system without having to login.</h3>
+              
+              <ul>
+                <li><i class="ion-android-checkmark-circle"></i> Press "Search" in the header. </li>
+                <li><i class="ion-android-checkmark-circle"></i> Pressing "Search" without choosing any option will show you all current offers.</li>
+                <li><i class="ion-android-checkmark-circle"></i> Indicate the make of the car before choosing its model. The list of car models depends on a particular car make.</li>
+                <li><i class="ion-android-checkmark-circle"></i> Once you have indicated all the requirements, a list of offers will appear.</li>
+                <li><i class="ion-android-checkmark-circle"></i> Note: a notification will appear if no car fulfills your requirements.</li>
+                <li><i class="ion-android-checkmark-circle"></i> To buy a car from our list you will need to contact us by contact form or by calling us.</li>
+                <li><i class="ion-android-checkmark-circle"></i> Note: all prices are confirmed by an expert. Nonetheless, negotiation in regards to the price is possible.</li>
+              </ul>
+  
+            </div> 
+            <div class="col-lg-6 about-img wow fadeInRight">
+                <img src="{{ url_for('static', filename='img/about-img2.JPG') }}" alt="search form">
+            </div>         
+          </div>
+  
+        </div>
+      </section>
+    <section id="team" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="section-title">Developer of the system</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">This system is developed in case of the magister diploma project by a student of University of Białystok. </p>
+        </div>
+        <div class="row wow fadeInUp">
+          <div class="col-lg col-md-6">
+            <div class="member">
+              <div class="pic"><img src="{{ url_for('static', filename='img/team/team-1.jpg') }}" width="300" height="300" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Student</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+</body>
+{% endblock %}
